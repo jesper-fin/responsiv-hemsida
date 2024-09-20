@@ -203,6 +203,22 @@ section {
   text-shadow: 3px 2px 0px #fff !important;
 }
 
+@media (max-width: 980px) {
+  #menu .col-md-6:first-child {
+    order: 2; /* Flyttar listan under textbeskrivningen */
+    margin-top: 4rem !important;
+  }
+  #menu .col-md-6:last-child {
+    order: 1; /* Flyttar textbeskrivningen ovanför listan */
+  }
+}
+
+@media (min-width: 980px) {
+  .section-wrapper {
+    text-align: left; /* Se till att texten vänsterjusteras */
+  }
+}
+
 #about {
   font-family: "Poppins-m" !important;
   margin-top: 50px;
